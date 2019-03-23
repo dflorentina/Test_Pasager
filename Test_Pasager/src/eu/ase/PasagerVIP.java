@@ -47,4 +47,11 @@ public class PasagerVIP extends Pasager {
 		this.nrCardVip = nrCardVip;
 	}
 
+	@Override
+	public String toString() {
+		return "PasagerVIP nrCardVip=" + nrCardVip + ", nume=" + getNume() + ", nr loc=" + getNrLoc()
+				+ ", varsta=" + getVarsta() + ", id rezervare=" + getIdRezervare();
+	}
+	
+
 }

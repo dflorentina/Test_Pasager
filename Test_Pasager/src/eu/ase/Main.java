@@ -47,10 +47,19 @@ public class Main {
 
 		Pasager[][] avion = new Pasager[][] { { pv, pv1 }, { pv2, pe }, { pe1, pe2 } };
 
-		Matrice matrice = new Matrice(2, 2, avion);
+		Matrice matrice = new Matrice(2, 3, avion);
 		System.out.println(matrice);
 
-		//TODO de afisat matricea si de testat element minim (criteriu pt element minim?)
+		System.out.println("-----------------");
+		matrice.afisareMatrice();
+		float a=matrice.afisareElementMinimMatrice();
+		System.out.println(a);
+		
+		matrice.scriePasageri("C:\\Users\\Flori\\Desktop\\avion.txt");
+		matrice.setContainer(null);
+		
+		matrice.incarcaPasageri("C:\\Users\\Flori\\Desktop\\avion.txt");
+		matrice.afisareMatrice();
 	}
 
 }

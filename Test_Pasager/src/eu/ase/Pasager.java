@@ -1,6 +1,8 @@
 package eu.ase;
 
-public abstract class Pasager implements Cloneable {
+import java.io.Serializable;
+
+public abstract class Pasager implements Cloneable,Serializable {
 	private String nume;
 	private float numarLoc;
 	private float varsta;

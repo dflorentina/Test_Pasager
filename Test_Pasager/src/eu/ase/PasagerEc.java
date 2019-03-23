@@ -46,4 +46,11 @@ public class PasagerEc extends Pasager implements Cloneable {
 		this.nrCardEc = nrCardEc;
 	}
 
+	@Override
+	public String toString() {
+		return "PasagerEc nrCardEc=" + nrCardEc + ", nume=" + getNume() + ", nr loc=" + getNrLoc()
+				+ ", varsta=" + getVarsta() + ", id rezervare=" + getIdRezervare();
+	}
+	
+	
 }
